@@ -59,7 +59,7 @@
             object-fit: cover;
             z-index: -4;
             animation: zoomVideo 18s ease-in-out infinite alternate;
-            filter: saturate(1.05) contrast(1.02);
+            filter: brightness(1.05) contrast(1.05) saturate(1.1);
         }
 
         .overlay {
@@ -67,9 +67,12 @@
             inset: 0;
             z-index: -3;
             background:
-                linear-gradient(180deg, rgba(40, 7, 16, 0.36) 0%, rgba(87, 18, 35, 0.56) 22%, rgba(152, 27, 54, 0.38) 48%, rgba(27, 11, 8, 0.74) 100%),
-                radial-gradient(circle at top right, rgba(255, 220, 140, 0.20), transparent 28%),
-                radial-gradient(circle at bottom left, rgba(255, 228, 180, 0.12), transparent 25%);
+                linear-gradient(180deg,
+                    rgba(0, 0, 0, 0.15) 0%,
+                    rgba(120, 20, 40, 0.35) 60%,
+                    rgba(0, 0, 0, 0.40) 100%),
+                radial-gradient(circle at top right, rgba(255, 220, 140, 0.18), transparent 28%),
+                radial-gradient(circle at bottom left, rgba(255, 228, 180, 0.10), transparent 25%);
         }
 
         .mist {
@@ -649,7 +652,7 @@
                 <div class="grid-info">
                     <div class="info">
                         <h3>Endereço</h3>
-                        <p>Av dos Ingas, 456</p>
+                        <p>Av dos Ingas, 456<br><strong>(em nossa casa)</strong></p>
                     </div>
 
                     <div class="info">
